@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYSL Registration Form</title>
+    <link rel="stylesheet" href="styles/nysl_3.css">
+    
+    <script type="text/javascript">
+        function pageScrolled(){
+            console.log(window.pageYOffset);
+            var logo = document.getElementById("logo");
+            if (window.pageYOffset > 420) {
+                logo.classList.add("logo-animate");
+            }
+            if (window.pageYOffset < 400) {
+                logo.classList.remove("logo-animate");
+            }
+        }
+    </script>
+    
+</head>
+    
+<body onscroll="pageScrolled()">
+    <div class="container">
+        <div class="grid">
+        
+        <!-- top menu bar -->
+        <div class="grid-menu"> 
+            <header>
+            <nav class="flex menu">
+                <div><a class="nav-btn" href="index.html">HOME</a></div>
+                <div><a class="nav-btn" href="about.html">ABOUT</a></div>
+                <div><a class="nav-btn" href="contact.html">CONTACT</a></div>
+                <div><a class="nav-btn" href="game_info.html">INFO</a></div>
+                <div><a class="nav-btn" href="rules.html">RULES</a></div>
+                <div class="current"><a class="nav-btn" href="registration.html">REGISTER</a></div>
+            </nav>  
+            </header>
+        </div>
+        
+        <!-- sticky page heading bar -->
+        <div class="grid-heading heading">
+            <p>Registration Form</p>
+        </div>
+                    
+        <div class="grid-pagebg"></div>
+
+        <!-- logo -->
+        <div class="grid-logo">
+            <img id="logo" class="logo" src="images/nysl_logo.png" alt="NYSL Logo">
+        </div>
+        
+        <!-- main page content -->
+        <div class="grid-page">
+            <form action="show_data.html" method="GET" class="form" id="RegistrationForm">
+                <div class="flex">
+                    <input class="input-fill" type="text" name="firstname" placeholder="FIRST NAME*" required>
+                    <input class="input-fill" type="text" name="lastname" placeholder="LAST NAME*" required>
+                </div>
+
+                <div class="flex">
+                    <input class="input-fill" type="text" name="street" placeholder="STREET ADDRESS">
+                </div>
+                
+                <div class="flex">
+                    <input class="input-fill" type="text" name="city" placeholder="CITY">
+                    <input class="input-fill" type="text" name="zip" placeholder="ZIP CODE">
+                </div>
+                <div class="flex">
+                    <input class="input-fill" type="date" name="dob" placeholder="BIRTH DATE">
+                </div>
+                
+                <div class="flex gender">
+                    <p>Gender:</p>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                </div>
+                
+                <div class="flex grade">
+                    <p>Grade:</p>
+                        <label><input type="radio" name="grade" value="0">Pre-school</label>
+                        <label><input type="radio" name="grade" value="1">1st</label>
+                        <label><input type="radio" name="grade" value="2">2nd</label>
+                        <label><input type="radio" name="grade" value="3">3rd</label>
+                        <label><input type="radio" name="grade" value="4">4th</label>
+                        <label><input type="radio" name="grade" value="5">5th</label>
+                    </div>
+                
+                <div class="flex">
+                    <input class="input-fill" type="text" name="parent" placeholder="PARENT/GUARDIAN">
+                </div>
+                
+                <div class="flex">
+                    <input class="input-fill" type="number" name="phone" placeholder="PHONE">
+                    <input class="input-fill" type="email" name="email" placeholder="EMAIL">
+                </div>
+                
+                
+                <p><strong>Which elementary schools do you live near?</strong></p>
+                <div class="flex schools">
+                    <div>
+                    First Closest School
+                    <select name="school1">
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="Howard A Yeager">Howard A Yeager</option>
+                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                        <option value="North Elementary">North Elementary</option>
+                        <option value="South Elementary">South Elementary</option>
+                    </select>
+                    </div>
+                             
+                    <div>
+                    Second Closest School
+                    <select name="school2">
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="Howard A Yeager">Howard A Yeager</option>
+                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                        <option value="North Elementary">North Elementary</option>
+                        <option value="South Elementary">South Elementary</option>
+                    </select>
+                    </div>
+                </div>
+
+                
+                <strong>What position(s) do you normally play?</strong> (Check all that applies)
+                    <div class="flex position">
+                    <label><input type="checkbox" name="position" value="AJ Katzenmaier">Forward</label>
+                    <label><input type="checkbox" name="position" value="Greenbay">Defense</label>
+                    <label><input type="checkbox" name="position" value="Howard A Yeager">Midfield</label>
+                    <label><input type="checkbox" name="position" value="Marjorie P Hart">Goalkeeper</label>
+                    </div>
+                
+                <strong>What position(s) do you want to play?</strong> (Check all that applies)
+                    <div class="flex position">
+                    <label><input type="checkbox" name="position" value="AJ Katzenmaier">Forward</label>
+                    <label><input type="checkbox" name="position" value="Greenbay">Defense</label>
+                    <label><input type="checkbox" name="position" value="Howard A Yeager">Midfield</label>
+                    <label><input type="checkbox" name="position" value="Marjorie P Hart">Goalkeeper</label>
+                    </div>
+                
+                <input type="checkbox" name="uniform" value="uniform"><strong>Already have a uniform</strong>
+                <div class="flex uniform">
+                    <div class="flex sizes">
+                        <strong>Jersey size:</strong>
+                        <label><input type="radio" name="jsize" value="ysmall">Youth Small</label>
+                        <label><input type="radio" name="jsize" value="ymedium">Youth Medium</label>
+                        <label><input type="radio" name="jsize" value="ylarge">Youth Large</label>
+                        <label><input type="radio" name="jsize" value="small">Small</label>
+                        <label><input type="radio" name="jsize" value="small">Medium</label>
+                        <label><input type="radio" name="jsize" value="small">Large</label>
+                        <label><input type="radio" name="jsize" value="small">Extra-Large</label>
+                    </div>
+                    <div class="flex sizes">
+                        <strong>Shorts size:</strong> 
+                        <label><input type="radio" name="jsize" value="ysmall">Youth Small</label>
+                        <label><input type="radio" name="jsize" value="ymedium">Youth Medium</label>
+                        <label><input type="radio" name="jsize" value="ylarge">Youth Large</label>
+                        <label><input type="radio" name="jsize" value="small">Small</label>
+                        <label><input type="radio" name="jsize" value="small">Medium</label>
+                        <label><input type="radio" name="jsize" value="small">Large</label>
+                        <label><input type="radio" name="jsize" value="small">Extra-Large</label>
+                    </div>
+                </div>
+            
+            <div class="flex flex-column">
+                <div>
+                    <strong><i>Permission to Play</i></strong>
+                    <p class="small">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Northside Youth Soccer League (NYSL). In recognizing the possibility of physical injury associated with soccer and in consideration for the “League” accepting the registrant for its soccer programs and activities, I hereby release, discharge, and/or otherwise indemnify NYSL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant’s participation in the program and/or being transported to or from NYSL sponsored activities, which transportation.
+                    By entering your name below, I hereby agree and authorize the above. In addition, by entering your name below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                </div>
+                <div>
+                    Parent/Guardian Signature:
+                </div>
+            </div>
+ 
+            
+                <div class="flex">
+                    <input class="input-fill" type="text" name="signature" placeholder="PARENT'S SIGNATURE*" required>
+                    <input class="input-fill" type="date" name="date" placeholder="DATE">
+                </div>
+                
+                <button type="submit" form="RegistrationForm" value="submit">SUBMIT</button>
+            
+            </form>
+
+        </div>
+
+            <div class="grid-footer">
+            </div>
+        
+        
+        </div> <!-- grid -->
+    </div> <!-- container -->
+
+
+</body>
+    
+</html>

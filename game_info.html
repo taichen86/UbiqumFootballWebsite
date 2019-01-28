@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>NYSL Game Information</title>
+    <link rel="stylesheet" href="styles/nysl_3.css">
+    
+        <script type="text/javascript">
+
+        function showMap(id){
+            var iframes = document.getElementsByClassName("GMap");
+            for(i=0;i<iframes.length;i++){
+                iframes[i].style.display = "none";
+            }
+            document.getElementById(id).style.display = "block";
+
+            var trs = document.getElementById("locationTable").rows;
+            for(i=0;i<trs.length;i++){
+                trs[i].style.fontWeight = "500";
+            }
+            trs[id.charAt(3)].style.fontWeight = "600";
+        }
+        
+        </script>
+</head>
+ 
+    <body onload="showMap('map0')">
+    
+        <div class="container">
+        <div class="grid">
+        
+        <!-- top menu bar -->
+        <div class="grid-menu"> 
+        <header>
+        <nav class="flex menu">
+            <div><a class="nav-btn" href="index.html">HOME</a></div>
+            <div><a class="nav-btn" href="about.html">ABOUT</a></div>
+            <div><a class="nav-btn" href="contact.html">CONTACT</a></div>
+            <div class="current"><a class="nav-btn" href="game_info.html">INFO</a></div>
+            <div><a class="nav-btn" href="rules.html">RULES</a></div>
+            <div><a class="nav-btn" href="registration.html">REGISTER</a></div>
+        </nav>          
+        </header>
+        </div>
+        
+        <!-- sticky page heading bar -->
+        <div class="grid-heading heading">
+            <p>Game Information</p>
+        </div>
+                    
+        <div class="grid-pagebg"></div>
+
+        <!-- logo -->
+        <div class="grid-logo">
+            <img class="logo" src="images/nysl_logo.png" alt="NYSL Logo">
+        </div>
+        
+        <!-- main page content -->
+        <div class="grid-page">
+        <section class="body-main-right schedule">
+            
+            <h7>Fall Schedule</h7>
+            <h8>* All games take place on Saturday.</h8>
+            <br>
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th scope="col" class="date">SEPTEMBER</th>
+                        <th scope="col">Teams</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="date">9/01</td>
+                        <td>U1 and U4</td>
+                        <td>AJ Katzenmaier</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U3 and U2</td>
+                        <td>Greenbay</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">9/08</td>
+                        <td>U5 and U6</td>
+                        <td>Howard A Yeager</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U6 and U1</td>
+                        <td>Marjorie P Hart</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">9/15</td>
+                        <td>U2 and U4</td>
+                        <td>North</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U3 and U5</td>
+                        <td>AJ Katzenmaier</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">9/22</td>
+                        <td>U1 and U3</td>
+                        <td>South</td>
+                        <td>9:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>U2 and U6</td>
+                        <td>Howard A Yeager</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="date">9/29</td>
+                        <td>U4 and U5</td>
+                        <td>Greenbay</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <br>
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th scope="col" class="date">OCTOBER</th>
+                        <th scope="col">Teams</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Times</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" class="date">10/06</td>
+                        <td>U2 and U5</td>
+                        <td>Marjorie P Hart</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U1 and U6</td>
+                        <td>South</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">10/13</td>
+                        <td>U3 and U4</td>
+                        <td>Howard A Yeager</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U5 and U1</td>
+                        <td>Greenbay</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">10/20</td>
+                        <td>U6 and U3</td>
+                        <td>North</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U2 and U4</td>
+                        <td>Marjorie P Hart</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                    <tr>
+                        <td rowspan="2" class="date">10/27</td>
+                        <td>U3 and U1</td>
+                        <td>AJ Katzenmaier</td>
+                        <td>9:30 a.m.</td>
+                    </tr>
+                    <tr>
+                        <td>U5 and U6</td>
+                        <td>Howard A Yeager</td>
+                        <td>1:00 p.m.</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            
+            <br>
+            <br>
+            <strong>Game Locations:</strong>
+            <table id="locationTable" class="location">
+                <tbody>
+                    <tr>
+                        <td>AJ Katzenmaier Elementary</td>
+                        <td class="address" onclick="showMap('map0')" >
+                        <p id="anchor0"></p>
+                        <a href="#anchor0">24 W. Walton St., Chicago, IL 60610</a>
+                        <iframe id="map0" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.654246110989!2d-87.63123908504339!3d41.90029237922037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34e07f6bac3%3A0x68a82e5d59952c86!2s24+W+Walton+St%2C+Chicago%2C+IL+60610%2C+USA!5e0!3m2!1sen!2ses!4v1548067231534" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Greenbay Elementary</td>
+                        <td class="address" onclick="showMap('map1')">
+                        <p id="anchor1"></p>
+                        <a href="#anchor1">1734 N. Orleans St., Chicago, IL 60614</a>
+                        <iframe id="map1" id="map1" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0258843688584!2d-87.64002798504286!3d41.91380227921935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd34073f306a3%3A0x9e1726bbf8f23f0e!2s1734+N+Orleans+St%2C+Chicago%2C+IL+60614%2C+USA!5e0!3m2!1sen!2ses!4v1548068477851" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Howard A Yeager Elementary</td>
+                        <td class="address" onclick="showMap('map2')" >
+                        <p id="anchor2"></p>
+                        <a href="#anchor2">2245 N. Southport Ave., Chicago, IL 60614</a>
+                        <iframe id="map2" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.585683085619!2d-87.66511458504247!3d41.92326457921863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd2e37f9b8d2d%3A0x62ad8b907dd755d6!2s2245+N+Southport+Ave%2C+Chicago%2C+IL+60614%2C+USA!5e0!3m2!1sen!2ses!4v1548068509385" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Marjorie P Hart Elementary</td>
+                        <td class="address" onclick="showMap('map3')">
+                        <p id="anchor3"></p>
+                        <a href="#anchor3">2625 N. Orchard St., Chicago, IL 60614</a>
+                        <iframe id="map3" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.291914658432!2d-87.64808628504224!3d41.92957827921814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd30f2630e551%3A0x3e719e44a5cef714!2s2625+N+Orchard+St%2C+Chicago%2C+IL+60614%2C+USA!5e0!3m2!1sen!2ses!4v1548068539554" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>North Elementary</td>
+                        <td class="address" onclick="showMap('map4')">
+                        <p id="anchor4"></p>
+                        <a href="#anchor4">1409 N. Ogden Ave., Chicago, IL 60610</a>
+                        <iframe id="map4" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.336488231583!2d-87.6483558850431!3d41.90712467921995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd33af13a8945%3A0xb6ad1ec2b6f379ba!2s1409+N+Ogden+Ave%2C+Chicago%2C+IL+60610%2C+USA!5e0!3m2!1sen!2ses!4v1548068563570" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>South Elementary
+                        </td>
+                        <td class="address" onclick="showMap('map5')">
+                        <p id="anchor5"></p>
+                        <a href="#anchor5">2101 N. Fremont St., Chicago, IL 60614</a>
+                        <iframe id="map5" class="GMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.747950525067!2d-87.65355538504261!3d41.919776779218914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3196fb41dc7%3A0x970be7f7d6336df5!2s2101+N+Fremont+St%2C+Chicago%2C+IL+60614%2C+USA!5e0!3m2!1sen!2ses!4v1548068588276" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <br>
+            <p><strong>Facility Type:</strong> Outdoor</p>
+            <br>
+            <p><strong>Additional Information:</strong> If deemed necessary by NYSL, games may be shortened or
+            cancelled due to extreme weather conditions.</p>
+            <br>
+            <p><strong>Please direct all questions to:</strong> Michael Randall, League Coordinator</p>
+            <br>
+            <table class="contact">
+                <tbody>
+                    <tr>
+                        <td><strong>Phone:</strong> (630) 690-8132
+                        </td>
+                        <td class="right"><strong>Email:</strong> michael.randall@chisoccer.org
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        </div>
+
+        <div class="grid-footer">
+        </div>
+        
+        
+        </div> <!-- grid -->
+        </div> <!-- container -->
+        
+
+    
+
+        
+</body>
+
+</html>
+

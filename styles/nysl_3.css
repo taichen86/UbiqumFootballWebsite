@@ -1,0 +1,471 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Common
+  ========================================
+*/
+
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h2{
+    font-weight: 600;
+}
+strong{
+    font-weight: 600;
+}
+.italic{
+    font-style: italic;
+}
+.text-indented{
+    margin-left: 30px;
+}
+
+.container{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    
+    background-image: 
+        url(../images/design2_image1.jpg),
+        url(../images/design1_image1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    animation-name: bg-animation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+.heading{
+    font-weight: 600;
+    font-size: 1.2em;
+    background-color: white;
+    text-align: center;
+}
+
+.logo{
+    width: 128px;
+    display: block;
+    margin: auto;
+    position: sticky;
+    top: 140px;
+}
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 54px 400px 40px 60px auto 60px 200px;
+}
+
+.grid-menu{
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+
+.grid-heading{
+    grid-area: 3 / 1 / span 1 / span 3;
+    position: sticky;
+    top: 54px;
+    border: 2px solid black;
+}
+
+.grid-logo{
+    grid-area: 5 / 1 / span 1 / span 1;
+}
+
+.grid-page{
+    grid-area: 5 / 2 / span 1 / span 1;
+}
+
+.grid-pagebg{
+    grid-area: 4 / 1 / span 3 / span 3;
+    background-color: whitesmoke;
+}
+
+.grid-footer{
+    grid-area: 7 / 1 / span 1 / span 3;
+}
+
+.half-width{
+    width: 50%;
+}
+
+
+/*
+  ========================================
+  Flex
+  ========================================
+*/
+
+.flex{
+    display: flex;
+    margin: 20px 0;
+
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-column div{
+    margin-bottom: 30px;
+}
+
+/*
+  ========================================
+  Menu
+  ========================================
+*/
+
+.menu{
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    justify-content: flex-start;
+    margin: 0;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    line-height: 54px;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+nav div{
+    height: 54px;
+}
+
+nav div:hover{
+  background-color: #a5fd2a;
+}
+
+nav .current{
+    background-color: #033949;
+    border-bottom: 5px solid #a5fd2a;
+}
+
+
+
+
+/*
+  ========================================
+  Rules
+  ========================================
+*/
+
+.rules-text ul.square{
+    list-style-type: square;
+}
+
+.rules-text ul.circle{
+    list-style-type: circle;
+}
+
+.rules-text ol.number{
+    list-style-type: decimal;
+}
+
+.rules-text ol.letter{
+    list-style-type: lower-latin;
+}
+
+
+.rules-text ul.level1 li, .rules-text ol.level1 li{
+    margin-left: 40px;
+}
+
+.rules-text ul.level2 li, .rules-text ol.level2 li{
+    margin-left: 60px;
+}
+
+.rules-text ul.level3 li, .rules-text ol.level3 li{
+    margin-left: 80px;
+}
+
+/*
+  ========================================
+  Info
+  ========================================
+*/
+
+.schedule th{
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-align: left;
+}
+
+.schedule th, .schedule td{
+    padding-right: 40px;
+} 
+
+.schedule .date{
+    padding: 0 20px;
+    text-align: center;
+    width: 180px;
+}
+
+table.contact{
+    width: 100%;
+}
+
+td.right{
+    text-align: right;
+}
+
+h7{
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+    display: block;
+    line-height: 2;
+}
+
+h8{
+    font-style: italic;
+    text-decoration-line: underline;
+    display: block;
+    line-height: 2;
+}
+
+.location tr{
+    border-bottom: 1px solid lightgray;
+}
+.location td{
+    text-align: left;
+    vertical-align: top;
+    padding: 10px 40px 10px 0;
+}
+
+
+.address{
+    cursor: pointer;
+}
+.address a{
+    color: black;
+    text-decoration: none;
+}
+.address a:hover{
+    color: darkgray;
+}
+
+.location iframe{
+    display: none;
+}
+
+#map0{
+    display: block;
+}
+
+#anchor0, #anchor1, #anchor2, #anchor3, #anchor4, #anchor5{
+    position: relative;
+    top: -120px;
+}
+
+/*
+  ========================================
+  Registration Form
+  ========================================
+*/
+
+.form p{
+    text-align: justify;
+}
+
+.form .fill{
+    flex-grow: 1;
+}
+
+.form label{
+    margin-right: 30px;
+}
+
+.form .gender p{
+    margin-right: 40px;
+}
+
+.form .grade p{
+    margin-right: 50px;
+}
+
+.form .schools{
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+.form .position{
+    flex-wrap: wrap;
+    margin-right: 20px;
+}
+
+.form .sizes{
+    flex-direction: column;
+    margin-right: 80px;
+}
+
+
+.form input, .form select{
+    margin: 2px;
+    background-color: whitesmoke;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+.form input::placeholder, 
+.form select, 
+.form input[type=date]{
+    color: #333;
+    font-size: 1.1em;
+}
+
+.form input:focus, .form select:focus{
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+
+.form .input-fill{
+    width: 100%;
+    min-height: 40px;
+}
+
+.form button{
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    color: #333;
+    font-weight: 760;
+}
+
+.form button:hover{
+    animation: button-animation;
+    animation-duration: 0.16s;  
+    animation-fill-mode: forwards;
+}
+
+.form input[name=uniform]:checked ~ .uniform{
+    display: none; 
+}
+
+
+
+/*
+  ========================================
+  Animation
+  ========================================
+*/
+
+@keyframes bg-animation {
+    0% {background-image: url(../images/design1_image1.jpg);}
+    30% {background-image: url(../images/design1_image1.jpg);}
+    40% {background-image: url(../images/design2_image1.jpg);}
+    90% {background-image: url(../images/design2_image1.jpg);}
+    100% {background-image: url(../images/design1_image1.jpg);}
+}
+
+@keyframes logo-animation {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg); }
+}
+
+.logo:hover, .logo-animate{
+    animation: logo-animation;
+    animation-duration: 1s;    
+}
+
+@keyframes button-animation {
+  from {background-color: whitesmoke;}
+  to {
+      color:gray;
+      border-color: gray;
+      background-color: white;
+    }
+}
+
+
+/*
+  ========================================
+  Parallex
+  ========================================
+*/
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}
+
